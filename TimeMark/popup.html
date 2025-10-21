@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TimeMark</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-content">
+        <h1 class="title">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2v20M2 12h20M12 2a10 10 0 0 1 10 10M12 2a10 10 0 0 0-10 10"/>
+          </svg>
+          TimeMark
+        </h1>
+        <button id="bookmarkBtn" class="bookmark-btn" title="Bookmark current timestamp">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <div id="currentVideo" class="current-video hidden">
+      <div class="video-info">
+        <div class="video-thumbnail-small">
+          <img id="currentThumbnail" src="" alt="Video thumbnail">
+        </div>
+        <div class="video-details">
+          <p id="currentTitle" class="video-title-small"></p>
+          <p id="currentTime" class="timestamp-text"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bookmarks-container">
+      <div class="bookmarks-header">
+        <h2 class="bookmarks-title">Saved Bookmarks</h2>
+        <button id="clearAllBtn" class="clear-btn hidden">Clear All</button>
+      </div>
+      
+      <div id="bookmarksList" class="bookmarks-list">
+        <div class="empty-state">
+          <svg class="empty-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
+          </svg>
+          <p class="empty-text">No bookmarks yet</p>
+          <p class="empty-subtext">Open a YouTube video and click the bookmark button above</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
