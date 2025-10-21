@@ -36,23 +36,64 @@ This dual-purpose project provides tools for YouTube timestamp management, allow
 - TypeScript for type safety
 - Form handling with validation
 
-## 🛠️ Technical Stack
+## 🛠️ Complete Tech Stack
 
-### Chrome Extension
-- **Manifest**: Version 3
-- **Storage**: Chrome's local storage API
-- **Permissions**: YouTube.com access and local storage
-- **Content Script**: Lightweight script for YouTube watch pages
-- **No External Dependencies**: Pure JavaScript, HTML, and CSS
+### **Core Technologies**
+- **React 18.3.1** - Modern React with hooks and concurrent features
+- **TypeScript 5.8.3** - Type-safe JavaScript development
+- **Vite 5.4.19** - Fast build tool and development server
 
-### React Web Application
-- **Frontend**: React 18 + TypeScript
-- **Build Tool**: Vite
-- **Styling**: Tailwind CSS + shadcn/ui components
-- **State Management**: TanStack Query
-- **Routing**: React Router DOM
-- **Form Handling**: React Hook Form + Zod validation
-- **UI Components**: Comprehensive shadcn/ui component library
+### **Styling & UI Framework**
+- **Tailwind CSS 3.4.17** - Utility-first CSS framework
+- **shadcn/ui** - Modern component library built on Radix UI
+- **Radix UI** - Headless UI components for accessibility (20+ components)
+- **Lucide React 0.462.0** - Beautiful icon library
+- **CSS Variables** - Custom theming system
+
+### **State Management & Data**
+- **TanStack Query 5.83.0** - Server state management
+- **React Router DOM 6.30.1** - Client-side routing
+- **React Hook Form 7.61.1** - Performant forms
+- **Zod 3.25.76** - Schema validation
+
+### **UI Components & Libraries**
+- **Radix UI Components**: Accordion, Alert Dialog, Avatar, Badge, Button, Calendar, Card, Carousel, Chart, Checkbox, Dialog, Dropdown Menu, Form, Input, Label, Navigation Menu, Popover, Progress, Select, Table, Tabs, Toast, Tooltip
+- **Embla Carousel React 8.6.0** - Carousel component
+- **React Day Picker 8.10.1** - Date picker
+- **React Resizable Panels 2.1.9** - Resizable panel layouts
+- **Recharts 2.15.4** - Chart library
+- **Sonner 1.7.4** - Toast notifications
+- **Vaul 0.9.9** - Drawer component
+
+### **Utility Libraries**
+- **clsx 2.1.1** - Conditional className utility
+- **tailwind-merge 2.6.0** - Tailwind class merging
+- **class-variance-authority 0.7.1** - Component variant management
+- **date-fns 3.6.0** - Date manipulation
+- **cmdk 1.1.1** - Command palette component
+
+### **Development Tools**
+- **ESLint 9.32.0** - JavaScript/TypeScript linting
+- **TypeScript ESLint 8.38.0** - TypeScript-specific linting
+- **React Hooks ESLint Plugin** - React hooks linting
+- **PostCSS 8.5.6** - CSS processing
+- **Autoprefixer 10.4.21** - CSS vendor prefixing
+- **SWC** - Fast TypeScript/JavaScript compiler
+
+### **Chrome Extension Stack**
+- **Manifest V3** - Latest Chrome extension standard
+- **Vanilla JavaScript** - No external dependencies
+- **Chrome APIs**: Storage, Tabs, ActiveTab
+- **Content Scripts** - YouTube page interaction
+- **Service Worker** - Background processing
+- **Local Storage** - Bookmark persistence
+
+### **Build & Configuration**
+- **Vite** - Fast build tool with HMR
+- **TypeScript** - Type safety and better DX
+- **Tailwind CSS** - Utility-first styling
+- **PostCSS** - CSS processing pipeline
+- **ESLint** - Code quality and consistency
 
 ## 🚀 Getting Started
 
